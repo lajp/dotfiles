@@ -1,0 +1,12 @@
+alias ls='ls --color=auto -X'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias e='exit'
+alias vim='nvim'
+alias c='~/.tmuxcpp'
+alias t=transmission-remote
+alias msketch=/opt/chemaxon/marvinsuite/MarvinSketch
+alias j=journalctl
+alias s=systemctl
+alias R="R --no-save -q"
