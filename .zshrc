@@ -11,9 +11,9 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_SPACE
 
 # Load aliases and shortcuts if existent.
-[ -f "/home/lajp/.config/zsh/shortcutrc" ] && source "/home/lajp/.config/zsh/shortcutrc"
-[ -f "/home/lajp/.config/zsh/aliasrc" ] && source "/home/lajp/.config/zsh/aliasrc"
-[ -f "/home/lajp/.config/zsh/zshnameddirrc" ] && source "/home/lajp/.config/zsh/zshnameddirrc"
+[ -f "~/.config/zsh/shortcutrc" ] && source "~/.config/zsh/shortcutrc"
+[ -f "~/.config/zsh/aliasrc" ] && source "~/.config/zsh/aliasrc"
+[ -f "~/.config/zsh/zshnameddirrc" ] && source "~/.config/zsh/zshnameddirrc"
 
 # Basic auto/tab complete:
 autoload -U compinit
