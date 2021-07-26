@@ -15,3 +15,5 @@ set nowrap
 
 let $RTP=split(&runtimepath, ',')[0]
 let $RC="$HOME/.vim/vimrc"
+
+let g:c_syntax_for_h = 1

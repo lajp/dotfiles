@@ -10,3 +10,4 @@ alias msketch=/opt/chemaxon/marvinsuite/MarvinSketch
 alias j=journalctl
 alias s=systemctl
 alias R="R --no-save -q"
+alias nvimdiff="nvim -d"

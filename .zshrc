@@ -4,15 +4,15 @@ PS1="%B%{$fg[red]%}[%{$fg[green]%}%n%{$fg[green]%}@%{$fg[magenta]%}%M %{$fg[yell
 setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
 
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=999999999
+SAVEHIST=999999999
 HISTFILE=~/.cache/zsh/history
 setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_SPACE
 
 # Load aliases and shortcuts if existent.
 [ -f "~/.config/zsh/shortcutrc" ] && source "~/.config/zsh/shortcutrc"
-[ -f "~/.config/zsh/aliasrc" ] && source "~/.config/zsh/aliasrc"
+[ -f "/home/lajp/.config/zsh/aliasrc" ] && source "/home/lajp/.config/zsh/aliasrc"
 [ -f "~/.config/zsh/zshnameddirrc" ] && source "~/.config/zsh/zshnameddirrc"
 
 # Basic auto/tab complete:

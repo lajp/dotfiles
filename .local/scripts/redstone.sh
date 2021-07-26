@@ -1,4 +1,4 @@
 #!/bin/sh
-sudo systemctl stop NetworkManager
-sudo wpa_supplicant -Dnl80211 -iwlp2s0 -cwpa_testconfig.conf -B
-sudo dhcpcd wlp2s0
+killall wpa_supplicant
+wpa_supplicant -Dnl80211 -iwlp3s0 -cwpa_config.conf -B
+dhcpcd wlp3s0
