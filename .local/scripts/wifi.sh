@@ -1,4 +1,6 @@
 #!/bin/sh
+rfkill unblock wlan
 killall wpa_supplicant
-wpa_supplicant -Dnl80211 -iwlp3s0 -c/etc/wpa_supplicant.conf -B
-dhcpcd wlp3s0
+killall dhcpcd
+wpa_supplicant -iwlan0 -c/etc/wpa_supplicant.conf -B
+dhcpcd wlan0
