@@ -1,2 +1,4 @@
 .vim/plugged/*
 .vim/autoload/*
+.local/share
+.config/mpv/watch_later
