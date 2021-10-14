@@ -1,8 +1,17 @@
 # Enable colors and change prompt:
 autoload -U colors && colors	# Load colors
-PS1="%B%{$fg[red]%}[%{$fg[green]%}%n%{$fg[green]%}@%{$fg[magenta]%}%M %{$fg[yellow]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
-setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
+
+function host_color {
+    case $HOST in
+      luukas-t440p) echo red ;;
+      t5810-artix) echo blue ;;
+      *) echo yellow ;;
+    esac
+}
+
+PS1="%B%{$fg[red]%}[%{$fg[green]%}%n%{$fg[green]%}@%{$fg[$(host_color)]%}%M %{$fg[yellow]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+
 
 HISTSIZE=999999999
 SAVEHIST=999999999
