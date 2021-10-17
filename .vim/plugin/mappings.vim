@@ -11,3 +11,5 @@ nnoremap <C-q> :cw<CR>
 nnoremap <C-j> :cnext<CR>
 nnoremap <C-k> :cprev<CR>
 nnoremap <leader>uw :!update_website.sh<CR>
+tnoremap <Esc> <C-\><C-n>
+nnoremap <leader>t :vs term://zsh<CR>

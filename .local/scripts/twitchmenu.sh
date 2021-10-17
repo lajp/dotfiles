@@ -1,3 +1,5 @@
+#!/bin/sh
+
 streamers="$(cat ~/.config/twitchmenu/streamers.txt || echo " ")"
 [ "$streamers" = " " ] && exit 1
 

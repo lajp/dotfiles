@@ -1,4 +1,5 @@
 lua require("clangd")
+lua require("treesitter")
 
 " Use <Tab> and <S-Tab> to navigate through popup menu
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
