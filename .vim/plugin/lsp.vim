@@ -1,4 +1,4 @@
-lua require("clangd")
+lua require("lsp")
 lua require("treesitter")
 
 " Use <Tab> and <S-Tab> to navigate through popup menu

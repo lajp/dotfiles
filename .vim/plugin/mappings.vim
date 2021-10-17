@@ -1,6 +1,5 @@
 let mapleader=" "
 nnoremap <SPACE> <Nop>
-"nnoremap <C-p> :FZF<CR>
 nnoremap <C-p> :Telescope find_files<CR>
 nnoremap <C-f> :Telescope live_grep<CR>
 vnoremap K :m '<-2<CR>gv=gv
