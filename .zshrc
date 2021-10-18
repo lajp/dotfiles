@@ -44,7 +44,7 @@ bindkey -v '^?' backward-delete-char
 bindkey '^R' history-incremental-search-backward
 
 echo -ne "\e[1 q"
-export PATH=$PATH:~/.local/scripts
+export PATH=$PATH:~/.local/scripts:~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin
 
 # Load syntax highlighting; should be last.
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
