@@ -28,8 +28,6 @@ require'lspconfig'.clangd.setup{
 	on_attach=custom_attach,
 	cmd = { "clangd", "--background-index", "--completion-style=bundled" },
 }
-require'lspconfig'.texlab.setup{on_attach=custom_attach,}
-require'lspconfig'.r_language_server.setup{on_attach=custom_attach,}
 require'lspconfig'.rust_analyzer.setup{
 	on_attach=custom_attach,
 	settings = {
