@@ -30,5 +30,14 @@ require'lspconfig'.clangd.setup{
 }
 require'lspconfig'.texlab.setup{on_attach=custom_attach,}
 require'lspconfig'.r_language_server.setup{on_attach=custom_attach,}
-require'lspconfig'.rust_analyzer.setup{on_attach=custom_attach,}
+require'lspconfig'.rust_analyzer.setup{
+	on_attach=custom_attach,
+	settings = {
+		["rust-analyzer"] = {
+			checkOnSave = {
+				command = "clippy"
+			},
+		}
+	},
+}
 require'lspconfig'.pyright.setup{on_attach=custom_attach,}
