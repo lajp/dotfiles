@@ -4,7 +4,8 @@ end
 
 local custom_attach = function(client)
 	print("LSP started.");
-	require'completion'.on_attach(client)
+	vim.g.coq_settings = { auto_start = 'shut-up' }
+	require'coq'
 
 	map('n','gD','<cmd>lua vim.lsp.buf.declaration()<CR>')
 	map('n','gd','<cmd>lua vim.lsp.buf.definition()<CR>')
@@ -22,6 +23,7 @@ local custom_attach = function(client)
 	map('n','<leader>=', '<cmd>lua vim.lsp.buf.formatting()<CR>')
 	map('n','<leader>ai','<cmd>lua vim.lsp.buf.incoming_calls()<CR>')
 	map('n','<leader>ao','<cmd>lua vim.lsp.buf.outgoing_calls()<CR>')
+	vim.api.nvim_exec("COQnow", true)
 end
 
 require'lspconfig'.clangd.setup{

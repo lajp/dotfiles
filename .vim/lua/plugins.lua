@@ -13,8 +13,10 @@ return require('packer').startup(function()
 
 	use 'vimwiki/vimwiki'
 
+	use { 'ms-jpq/coq_nvim', branch = 'coq', run = ':COQdeps'}
+	use { 'ms-jpq/coq.artifacts', branch = 'artifacts' }
+
 	use 'neovim/nvim-lspconfig'
-	use 'nvim-lua/completion-nvim'
 	use 'nvim-lua/diagnostic-nvim'
 
 	use { 'glacambre/firenvim', run = function() vim.fn['firenvim#install'](0) end }
