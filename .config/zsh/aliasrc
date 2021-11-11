@@ -9,3 +9,4 @@ alias msketch=/opt/chemaxon/marvinsuite/MarvinSketch
 alias R="R --no-save -q"
 alias nvimdiff="nvim -d"
 alias tm='sh ~/.tmuxcpp'
+alias a='tmuxmenu.sh'
