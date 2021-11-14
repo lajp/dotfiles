@@ -24,6 +24,14 @@ return require('packer').startup(function()
 	use 'nvim-telescope/telescope.nvim'
 
 	use 'vimsence/vimsence'
+
+    use {
+        'lewis6991/gitsigns.nvim',
+        requires = {
+            'nvim-lua/plenary.nvim'
+        },
+    }
+
 	if packer_bootstrap then
 		require('packer').sync()
 	end

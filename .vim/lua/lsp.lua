@@ -40,3 +40,4 @@ require'lspconfig'.rust_analyzer.setup{
 	},
 }
 require'lspconfig'.pyright.setup{on_attach=custom_attach,}
+require('gitsigns').setup()
