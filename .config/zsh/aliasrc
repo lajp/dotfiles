@@ -11,3 +11,6 @@ alias nvimdiff="nvim -d"
 alias ssh="TERM=xterm-256color ssh"
 alias tm='sh ~/.tmuxcpp'
 alias a='tmuxmenu.sh'
+alias tempdir='cd $(mktemp -d)'
+alias c='xclip -sel clip'
+alias v='xclip -sel clip -o'
