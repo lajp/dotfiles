@@ -3,9 +3,9 @@ SESSION=`basename $PWD`
 
 tmux -2 new-session -d -s $SESSION
 
-tmux rename-window -t $SESSION:0 vim
+tmux rename-window -t $SESSION:1 vim
 tmux send-keys "nvim ." C-m
-tmux new-window -t $SESSION:0 -a -n test
+tmux new-window -t $SESSION:2 -a -n test
 
-tmux select-window -t $SESSION:0
+tmux select-window -t $SESSION:1
 tmux -2 attach -t $SESSION

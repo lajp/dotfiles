@@ -35,6 +35,8 @@ _comp_options+=(globdots)		# Include hidden files.
 bindkey -v
 export KEYTIMEOUT=1
 
+export TERMINAL=/usr/bin/alacritty
+
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
@@ -44,7 +46,12 @@ bindkey -v '^?' backward-delete-char
 bindkey '^R' history-incremental-search-backward
 
 echo -ne "\e[1 q"
-export PATH=$PATH:~/.local/scripts:~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin
+export PATH=$PATH:~/.local/scripts:~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin:/home/lajp/.local/share/gem/ruby/3.0.0/bin
+
+export GPG_TTY=$(tty)
+if [[ -n "$SSH_CONNECTION" ]] ;then
+    export PINENTRY_USER_DATA="USE_CURSES=1"
+fi
 
 # Load syntax highlighting; should be last.
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null

@@ -1,12 +1,12 @@
 ## Autostart section
-slstatus &
+dwmblocks &
 setxkbmap -layout fi
 setxkbmap -option caps:escape
 setxkbmap -option 'grp:alt_shift_toggle'
 xset r rate 250 20 &
 #/usr/bin/xcalib -d :0 ~/.color/icc/x200.icc
+hsetroot -root -cover ~/Pictures/bg_full.jpg # Set tupla background pic
 pulseaudio --start
-hsetroot -cover ~/Pictures/tuplatupla.jpg # Set tupla background pic
 compton -b
 xrdb -load .Xresources
 export _JAVA_AWT_WM_NONREPARENTING=1
