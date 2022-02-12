@@ -23,6 +23,8 @@ return require('packer').startup(function()
 	use 'nvim-lua/plenary.nvim'
 	use 'nvim-telescope/telescope.nvim'
 
+    use 'neovimhaskell/nvim-hs.vim' --😍
+
 	use 'vimsence/vimsence'
 
     use {
