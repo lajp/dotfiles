@@ -7,8 +7,6 @@ end
 return require('packer').startup(function()
 	use 'wbthomason/packer.nvim'
 
-	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-
 	use 'gruvbox-community/gruvbox'
 
 	use 'vimwiki/vimwiki'
@@ -22,8 +20,6 @@ return require('packer').startup(function()
 	use 'nvim-lua/popup.nvim'
 	use 'nvim-lua/plenary.nvim'
 	use 'nvim-telescope/telescope.nvim'
-
-    use 'neovimhaskell/nvim-hs.vim' --😍
 
 	use 'vimsence/vimsence'
 
