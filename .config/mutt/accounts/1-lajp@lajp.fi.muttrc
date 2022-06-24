@@ -1,0 +1,42 @@
+# vim: filetype=neomuttrc
+# muttrc file for account lajp@lajp.fi
+set realname = "lajp"
+set from = "lajp@lajp.fi"
+set sendmail = "msmtp -a lajp@lajp.fi"
+alias me lajp <lajp@lajp.fi>
+set folder = "/home/lajp/.local/share/mail/lajp@lajp.fi"
+set header_cache = /home/lajp/.cache/mail/lajp@lajp.fi/headers
+set message_cachedir = /home/lajp/.cache/mail/lajp@lajp.fi/bodies
+set mbox_type = Maildir
+
+bind index,pager gg noop
+bind index,pager g noop
+bind index,pager M noop
+bind index,pager C noop
+bind index gg first-entry
+unmailboxes *
+unalternates *
+unset signature
+unmacro index o
+macro index o "<shell-escape>mbsync lajp@lajp.fi<enter>" "run mbsync to sync lajp@lajp.fi"
+
+mailboxes "=Trash" "=Sent" "=Drafts" "=Junk" "=INBOX"
+macro index,pager gt "<change-folder>=Trash<enter>" "go to trash"
+macro index,pager Mt ";<save-message>=Trash<enter>" "move mail to trash"
+macro index,pager Ct ";<copy-message>=Trash<enter>" "copy mail to trash"
+set trash = "+Trash"
+set record = "+Sent"
+macro index,pager gs "<change-folder>=Sent<enter>" "go to sent"
+macro index,pager Ms ";<save-message>=Sent<enter>" "move mail to sent"
+macro index,pager Cs ";<copy-message>=Sent<enter>" "copy mail to sent"
+set postponed = "+Drafts"
+macro index,pager gd "<change-folder>=Drafts<enter>" "go to drafts"
+macro index,pager Md ";<save-message>=Drafts<enter>" "move mail to drafts"
+macro index,pager Cd ";<copy-message>=Drafts<enter>" "copy mail to drafts"
+macro index,pager gj "<change-folder>=Junk<enter>" "go to junk"
+macro index,pager Mj ";<save-message>=Junk<enter>" "move mail to junk"
+macro index,pager Cj ";<copy-message>=Junk<enter>" "copy mail to junk"
+macro index,pager gi "<change-folder>=INBOX<enter>" "go to inbox"
+macro index,pager Mi ";<save-message>=INBOX<enter>" "move mail to inbox"
+macro index,pager Ci ";<copy-message>=INBOX<enter>" "copy mail to inbox"
+set spoolfile = "+INBOX"

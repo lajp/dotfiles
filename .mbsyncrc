@@ -1,0 +1,81 @@
+
+IMAPStore lajp@lajp.fi-remote
+Host mail.lajp.fi
+Port 993
+User lajp@lajp.fi
+PassCmd "pass lajp@lajp.fi"
+AuthMechs LOGIN
+SSLType IMAPS
+#CertificateFile /etc/ssl/certs/ca-certificates.crt
+CertificateFile /home/lajp/.local/share/mailcert/lajp.fi.crt
+
+MaildirStore lajp@lajp.fi-local
+Subfolders Verbatim
+Path /home/lajp/.local/share/mail/lajp@lajp.fi/
+Inbox /home/lajp/.local/share/mail/lajp@lajp.fi/INBOX
+
+Channel lajp@lajp.fi
+Expunge Both
+Master :lajp@lajp.fi-remote:
+Slave :lajp@lajp.fi-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+
+IMAPStore lajp@iki.fi-remote
+Host mail.lajp.fi
+Port 993
+User lajp@lajp.fi
+PassCmd "pass lajp@lajp.fi"
+AuthMechs LOGIN
+SSLType IMAPS
+#CertificateFile /etc/ssl/certs/ca-certificates.crt
+CertificateFile /home/lajp/.local/share/mailcert/lajp.fi.crt
+
+MaildirStore lajp@lajp.fi-local
+Subfolders Verbatim
+Path /home/lajp/.local/share/mail/lajp@lajp.fi/
+Inbox /home/lajp/.local/share/mail/lajp@lajp.fi/INBOX
+
+Channel lajp@iki.fi
+Expunge Both
+Master :lajp@lajp.fi-remote:
+Slave :lajp@lajp.fi-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+
+IMAPStore luukas.portfors@iki.fi-remote
+Host mail.lajp.fi
+Port 993
+User lajp@iki.fi
+PassCmd "pass lajp@lajp.fi"
+AuthMechs LOGIN
+SSLType IMAPS
+#CertificateFile /etc/ssl/certs/ca-certificates.crt
+CertificateFile /home/lajp/.local/share/mailcert/lajp.fi.crt
+
+MaildirStore lajp@lajp.fi-local
+Subfolders Verbatim
+Path /home/lajp/.local/share/mail/lajp@lajp.fi/
+Inbox /home/lajp/.local/share/mail/lajp@lajp.fi/INBOX
+
+Channel luukas.portfors@iki.fi
+Expunge Both
+Master :lajp@lajp.fi-remote:
+Slave :lajp@lajp.fi-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
