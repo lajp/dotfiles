@@ -175,6 +175,7 @@ set crypt_autosign = yes
 set crypt_autoencrypt = yes
 set pgp_auto_decode = yes
 set pgp_self_encrypt = yes
+set pgp_default_key = 68D0D2610F8AC8301D8001A071B66E5117E965D9
 set mime_type_query_command = "xdg-mime query filetype"
 
 source /home/lajp/.config/mutt/accounts/2-lajp@iki.fi.muttrc
