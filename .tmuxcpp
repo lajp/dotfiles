@@ -1,5 +1,5 @@
 #!/bin/sh
-SESSION=`basename $PWD`
+SESSION=`basename $PWD | sed "s/\./_/g"`
 
 tmux -2 new-session -d -s $SESSION
 
