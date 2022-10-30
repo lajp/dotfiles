@@ -58,3 +58,5 @@ fi
 
 # Load syntax highlighting; should be last.
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
+
+[ -f "/home/lajp/.ghcup/env" ] && source "/home/lajp/.ghcup/env" # ghcup-env
