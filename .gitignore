@@ -1,4 +1,5 @@
 .vim/plugged/*
 .vim/autoload/*
+.vim/.netrwhist
 .local/share
 .config/mpv/watch_later
