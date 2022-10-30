@@ -27,7 +27,7 @@ font:
     family: Liberation Mono
     style: Bold Italic
 
-  size: 12.5
+  size: 9
 
 key_bindings:
   - { key: J, mods: Alt, mode: ~Alt, action: ScrollLineDown }

@@ -6,6 +6,7 @@ function host_color {
     case $HOST in
       luukas-t440p) echo red ;;
       t5810-artix) echo blue ;;
+      inttipad) echo red ;;
       *) echo yellow ;;
     esac
 }
@@ -36,6 +37,8 @@ bindkey -v
 export KEYTIMEOUT=1
 
 export TERMINAL=/usr/bin/alacritty
+
+export EDITOR=nvim
 
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
