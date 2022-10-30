@@ -11,11 +11,24 @@ return require('packer').startup(function()
 
 	use 'vimwiki/vimwiki'
 
-	use { 'ms-jpq/coq_nvim', branch = 'coq', run = ':COQdeps'}
-	use { 'ms-jpq/coq.artifacts', branch = 'artifacts' }
+    use 'hrsh7th/cmp-nvim-lsp'
+    use 'hrsh7th/nvim-cmp'
+
+    use 'L3MON4D3/LuaSnip'
+    use 'saadparwaiz1/cmp_luasnip'
 
 	use 'neovim/nvim-lspconfig'
 	use 'nvim-lua/diagnostic-nvim'
+
+    use 'rust-lang/rust.vim'
+
+    use {
+        'testaustime/testaustime.nvim',
+        requires = { 'nvim-lua/plenary.nvim' },
+        config = function()
+            require'pluginconf.testaustime_conf'
+        end
+    }
 
 	use 'nvim-lua/popup.nvim'
 	use 'nvim-lua/plenary.nvim'

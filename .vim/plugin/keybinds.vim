@@ -12,3 +12,6 @@ nnoremap <C-k> :cprev<CR>
 nnoremap <leader>uw :!update_website.sh<CR>
 tnoremap <Esc> <C-\><C-n>
 nnoremap <leader>t :vs term://zsh<CR>
+nnoremap <silent> <leader>ee :lua vim.diagnostic.open_float()<CR>
+nnoremap <silent> K :lua vim.lsp.buf.hover()<CR>
+nnoremap <silent> <leader>af :lua vim.lsp.buf.code_action()<CR>
