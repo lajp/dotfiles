@@ -12,9 +12,9 @@ xrdb -load .Xresources
 export _JAVA_AWT_WM_NONREPARENTING=1
 blmgr 10%
 
-#pipewire &
-#/usr/bin/pipewire-pulse &
-#/usr/bin/wireplumber &
+pipewire &
+/usr/bin/pipewire-pulse &
+/usr/bin/wireplumber &
 
-exec dwm
-#dbus-launch --exit-with-session dwm
+#exec dwm
+dbus-launch --exit-with-session dwm

@@ -2,7 +2,7 @@
 
 ping -q -c 1 8.8.8.8 || exit 1 # no internet connection
 dunstify "backup in progress..."
-RET=/home/lajp/.local/scripts/backup.sh
-$RET && dunstify "backup succesful" && exit
-DISPLAY=:1 dunstify "backup failed"
+/home/lajp/.local/scripts/backup.sh
+$? && notify-send "backup succesful" && exit
+DISPLAY=:1 notify-send "backup failed"
 exit 1
