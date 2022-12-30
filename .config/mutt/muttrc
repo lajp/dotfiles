@@ -19,7 +19,7 @@ set forward_quote
 set reverse_name
 set include
 set mail_check=60
-auto_view text/html
+#auto_view text/html
 auto_view application/pgp-encrypted
 alternative_order text/plain text/enriched text/html
 
