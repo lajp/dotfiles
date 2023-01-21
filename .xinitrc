@@ -4,7 +4,7 @@ setxkbmap -layout fi
 setxkbmap -option caps:escape
 setxkbmap -option 'grp:alt_shift_toggle'
 xset r rate 250 20 &
-xinput disable "Synaptics TM3053-004"
+xinput disable "Synaptics TM3276-022"
 hsetroot -cover ~/Pictures/haskell_bg.jpg
 picom -b
 dunst &
