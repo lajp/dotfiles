@@ -49,3 +49,6 @@ require'lspconfig'.hls.setup{
 	capabilities = capabilities,
     single_file_support=true,
 }
+require'lspconfig'.metals.setup{
+    capabilities = capabilities,
+}

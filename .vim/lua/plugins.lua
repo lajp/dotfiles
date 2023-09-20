@@ -9,7 +9,8 @@ return require('packer').startup(function()
 
 	use 'gruvbox-community/gruvbox'
 
-	use 'vimwiki/vimwiki'
+    use 'lervag/vimtex'
+    use 'hrsh7th/cmp-omni'
 
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/nvim-cmp'
